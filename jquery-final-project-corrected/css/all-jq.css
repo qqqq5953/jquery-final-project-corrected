@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+}
+
+/* --------------------------------------------- */
+.wrap {
+    margin        : 0px auto;
+    letter-spacing: 0.5px;
+    font-family   : "noto sans tc", "noto serif tc";
+    color         : #333333;
+    font-size     : 18px;
+    width         : 1002px;
+}
+
+.home-page-header {
+    margin-bottom: 50px;
+}
+
+.social-media {
+    display         : flex;
+    justify-content : flex-end;
+    background-color: #f6f6f6;
+    padding         : 10px 0;
+}
+
+.fb,
+.tw {
+    display: flex;
+}
+
+.fb {
+    border-right: 1px solid #d4d4d4;
+    padding     : 3px 10px 3px 0px;
+}
+
+.tw {
+    padding: 3px 18px 3px 10px;
+}
+
+.fb a {
+    margin-left    : 5px;
+    color          : #4863a1;
+    text-decoration: none;
+}
+
+.fb a:hover,
+.tw a:hover {
+    text-decoration: underline;
+}
+
+.tw a {
+    margin-left    : 4px;
+    color          : #08b0d1;
+    text-decoration: none;
+}
+
+nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin         : 3px 0;
+}
+
+nav h1 {
+    background : url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width      : 224px;
+    height     : 50px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow   : hidden;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation>li {
+    margin    : 0 10px;
+    text-align: center;
+    position  : relative;
+}
+
+.navigation>li>a {
+    text-decoration: none;
+    display        : block;
+    color          : #00d19b;
+    padding        : 21px 8px;
+    border-bottom  : 3px solid white;
+}
+
+.navigation>li>a:hover {
+    border-bottom-color: #00d19b;
+}
+
+.dropdown {
+    box-shadow      : 0px 3px 10px 5px rgba(0, 0, 0, 0.1);
+    display         : none;
+    position        : absolute;
+    width           : 100%;
+    z-index         : 99;
+    background-color: rgb(255, 255, 255);
+    border-radius   : 0 0 3px 3px;
+}
+
+.dropdown li a {
+    display           : block;
+    padding           : 10px 0;
+    text-decoration   : none;
+    color             : #00d19b;
+    /* border-radius  : 0 0 3px 3px; */
+}
+
+.dropdown li a:hover {
+    background-color: #00d19b;
+    color           : white;
+}
+
+.swiper-container {
+    width           : 1002px;
+    height          : 560px;
+    background-color: rgb(36, 36, 36);
+    position        : relative;
+}
+
+.swiper-slide {
+    height     : 346px;
+    display    : flex;
+    align-items: center;
+}
+
+.swiper-banner1 {
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+}
+
+.swiper-banner2 {
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png) no-repeat 100%;
+    height    : 100%;
+}
+
+.swiper-banner3 {
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png) no-repeat 100%;
+    height    : 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination {
+    color: white;
+}
+
+.swiper-slide h2 {
+    font-size  : 45px;
+    color      : white;
+    line-height: 1.4;
+    width      : 100%;
+    padding    : 20px 0 20px 60px;
+    background : rgba(255, 255, 255, 0.04);
+}
+
+.swiper-banner1 h2 {
+    position: absolute;
+    top     : 59%;
+}
+
+.swiper-banner2 h2 {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.course .course-ul {
+    display        : flex;
+    justify-content: space-around;
+    margin-bottom  : 50px;
+}
+
+.description h4 {
+    margin     : 8px 0;
+    text-align : center;
+    font-weight: 400;
+    font-size  : 23px;
+}
+
+.course-item {
+    width     : 32%;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.course-item a {
+    padding           : 18px;
+    -webkit-box-sizing: border-box;
+    box-sizing        : border-box;
+    height            : 100%;
+    text-decoration   : none;
+    display           : block;
+}
+
+.course-img {
+    height         : 140px;
+    text-align     : center;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.description {
+    line-height : 1.4;
+    text-align  : justify;
+    text-justify: inter-ideograph;
+    font-weight : 300;
+    color       : #333333;
+}
+
+.content li {
+    list-style : square;
+    margin-left: 22px;
+}
+
+.content li::marker {
+    font-size: 12px;
+}
+
+.difference h3 {
+    margin     : 0 auto 20px;
+    text-align : center;
+    font-size  : 26px;
+    font-weight: 400;
+}
+
+.difference table {
+    margin: 0 auto 50px;
+}
+
+.difference th,
+.difference td {
+    padding      : 15px 70px 15px 35px;
+    border-top   : 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.difference th {
+    background-color: #f7f7f7;
+    text-align      : left;
+    font-weight     : 400;
+}
+
+.difference td {
+    font-weight: 300;
+}
+
+.green {
+    color: #55b193;
+}
+
+.message {
+    background: -webkit-linear-gradient(#00674c, #019872);
+    color     : white;
+    padding   : 30px 0;
+}
+
+.message h3 {
+    text-align : center;
+    line-height: 1.4;
+    font-size  : 26px;
+    font-weight: 400;
+}
+
+.inquiry-form {
+    display        : flex;
+    justify-content: space-evenly;
+    margin         : 30px 10px;
+}
+
+.inquiry-form textarea {
+    border-radius: 3px;
+    border-color : transparent;
+    font-size    : 18px;
+    width        : 45%;
+}
+
+.info {
+    width: 45%;
+}
+
+.inquiry-form input {
+    box-sizing   : border-box;
+    display      : block;
+    margin       : 8px 0 20px;
+    width        : 100%;
+    padding      : 8px;
+    border-radius: 3px;
+    border       : none;
+    font-size    : 18px;
+}
+
+.inquiry-form .submit {
+    width           : auto;
+    margin          : 8px 0px;
+    padding-left    : 20px;
+    padding-right   : 20px;
+    color           : white;
+    background-color: #00cc98;
+    border          : none;
+    float           : right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.inquiry-form .submit:hover {
+    cursor          : pointer;
+    background-color: #08e0aa;
+}
+
+.home-page-footer {
+    display        : flex;
+    justify-content: space-between;
+    padding        : 20px 10px;
+}
+
+.footer-logo {
+    background : url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+    width      : 171px;
+    height     : 36px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow   : hidden;
+}
+
+.contact {
+    line-height: 1.4;
+    font-size  : 16px;
+}
+
+.contact a {
+    text-decoration: none;
+    color          : #fb4588;
+}
+
+.contact a:hover {
+    text-decoration      : underline;
+    text-decoration-color: #fb4588;
+}
+
+.top a {
+    font-size      : 25px;
+    color          : orange;
+    position       : fixed;
+    z-index        : 100;
+    right          : 10px;
+    bottom         : 0;
+    text-decoration: none;
+    text-align     : center;
+    padding        : 10px 0;
+    opacity        : 0.7;
+    display        : none;
+}
+
+.top a i {
+    background-color: #999999;
+    border-radius   : 50%;
+    padding         : 9px 10px;
+}
+
+.back-to-top {
+    font-size : 12px;
+    margin-top: 10px;
+}
